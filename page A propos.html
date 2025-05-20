@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À Propos - Tennis de Table Club</title>
+    <style>
+        body {
+            background: #E8F0F2;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #2C3E50;
+            font-weight: 300;
+        }
+        nav {
+            background-color: #3498DB;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #2980B9;
+        }
+        .conteneur {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .conteneur img {
+            margin: 20px 0;
+            border-radius: 8px;
+            width: 100%;
+        }
+        fieldset {
+            border: none;
+            background-color: #F7F9FC;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        legend {
+            font-weight: bold;
+            color: #3498DB;
+        }
+        .champ {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        input[type="text"] {
+            width: 70%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #2a658d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #2980B9;
+        }
+        .footer {
+            background-color: #2C3E50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 14px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color: #ffc107;
+        }
+        nav {
+            background-color: #3498DB;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            position: relative;
+            margin: 0 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background 0.3s, transform 0.3s;
+            display: block;
+            border-radius: 30px;
+        }
+        nav a:hover {
+            background: #2980B9;
+            transform: scale(1.1);
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #3498DB;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+            border-radius: 5px;
+            z-index: 1000;
+        }
+        .dropdown:hover .submenu {
+            display: block;
+        }
+        .submenu a {
+            padding: 10px 20px;
+            display: block;
+            color: #fff;
+        }
+        .container {
+            flex: 1;
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body></body>
+    <nav>
+        <ul>
+            <li class="dropdown"><a href="#">Le Club</a>
+                <ul class="submenu">
+                    <li><a href="page organisation.html">Organisation</a></li>
+                    <li><a href="page sponsor.html">Sponsors</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">Info Pratique</a>
+                <ul class="submenu">
+                    <li><a href="page adhesion.html">Adhésion</a></li>
+                    <li><a href="page classement.html">Classement</a></li>
+                    <li><a href="#">Calendrier des Compétitions</a></li>
+                </ul>
+            </li>
+            <li><a href="page contact.html">Contact</a></li>
+            <li><a href="htmldamien.html">accueil</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>À Propos de Notre Club</h1>
+        <p>Bienvenue à l'étoile sportive de jussey, votre destination de choix pour découvrir ou pratiquer ce sport passionnant. Notre club est dédié à tous les amateurs, des débutants aux joueurs expérimentés.</p>
+        <p>Nous offrons un environnement convivial et encourageant pour tous les âges et niveaux. Rejoignez-nous pour améliorer vos compétences, participer à des compétitions ou simplement profiter de matchs amicaux.</p>
+        <p>Notre mission est de promouvoir le tennis de table et de rassembler une communauté passionnée autour de ce sport dynamique et stimulant.</p>
+        <p>Nos installations modernes vous offrent tout ce qu'il faut pour jouer dans les meilleures conditions. Nos entraîneurs qualifiés sont disponibles pour vous guider, que vous souhaitiez apprendre les bases ou affiner votre technique.</p>
+        <p>Notre équipe s'engage à offrir un service de qualité et à répondre aux besoins de chaque membre. Nous croyons fermement que chacun peut progresser, s'amuser, et se sentir à l'aise au sein de notre club.</p>
+        <p>N'hésitez pas à nous contacter pour en savoir plus sur les adhésions, les horaires ou toute autre question. Nous sommes impatients de vous accueillir dans notre club et de partager avec vous notre passion pour le tennis de table.
+        <p>Nous espérons vous voir bientôt et vous accompagner dans votre parcours sportif. Ensemble, faisons de chaque jeu une expérience inoubliable!</p>
+    </div>
+    <div class="footer">
+        © 2025 Etoile Sportive Jussey | <a href="mention legales.html">Mentions légales</a>
+    </div>
+</body>
+</html>

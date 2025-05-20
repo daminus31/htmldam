@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Etoile Sportive de Jussey</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background: #E8F0F2;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #2C3E50;
+            font-weight: 300;
+        }
+        nav {
+            background-color: #3498DB;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            position: relative;
+            margin: 0 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background 0.3s, transform 0.3s;
+            display: block;
+            border-radius: 30px;
+        }
+        nav a:hover {
+            background: #2980B9;
+            transform: scale(1.1);
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #3498DB;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+            border-radius: 5px;
+            z-index: 1000;
+        }
+        .dropdown:hover .submenu {
+            display: block;
+        }
+        .submenu a {
+            padding: 10px 20px;
+            display: block;
+            color: #fff;
+        }
+        .conteneur {
+            max-width: 1000px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+        td, th {
+            border: 1px solid #ddd;
+            padding: 16px;
+            text-align: left;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+        .footer {
+            background-color: #2C3E50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 14px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="dropdown"><a href="#">Le Club ▼</a>
+                <ul class="submenu">
+                    <li><a href="page organisation.html">Organisation</a></li>
+                    <li><a href="page sponsor.html">Sponsors</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">Info Pratique ▼</a>
+                <ul class="submenu">
+                    <li><a href="page adhesion.html">Adhésion</a></li>
+                    <li><a href="page classement.html">Classement</a></li>
+                    <li><a href="#">Calendrier des Compétitions</a></li>
+                </ul>
+            </li>
+            <li><a href="page contact.html">Contact</a></li>
+            <li><a href="htmldamien.html">accueil</a></li>
+        </ul>
+    </nav>
+
+    <div class="conteneur">
+        <h1>Organisation</h1>
+        <p><strong>Composition du bureau de l'ES Jussey</strong></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Poste</th>
+                    <th>Nom</th>
+                    <th>Téléphone</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Président</td>
+                    <td>Hernandez Sébastien</td>
+                    <td>0689210210</td>
+                    <td>esjusseytt@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Secrétaire</td>
+                    <td>Aubry Geoffrey</td>
+                    <td>?????</td>
+                    <td>aubrygeo@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Trésorier</td>
+                    <td>Cheviet Simon</td>
+                    <td>0636696576</td>
+                    <td>chevietsim@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        © 2025 Etoile Sportive de Jussey | <a href="mention legales.html">Mentions légales</a>
+    </div>
+</body>
+</html>

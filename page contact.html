@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Etoile Sportive de Jussey</title>
+            <meta charset="utf-8">
+            <style>
+                body {
+                    background: #E8F0F2;
+                    font-family: 'Roboto', sans-serif;
+                    margin: 0;
+                    color: #333;
+                    
+                }
+                h1 {
+                    text-align: center;
+                    margin-top: 20px;
+                    color: #2C3E50;
+                    font-weight: 300;
+                }
+                nav {
+                    background-color: #3498DB;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                }
+                nav ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 10px 0;
+                    display: flex;
+                    justify-content: center;
+                }
+                nav li {
+                    margin: 0 15px;
+                }
+                nav a {
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 8px 15px;
+                    border-radius: 4px;
+                    transition: background 0.3s;
+                }
+                nav a:hover {
+                    background: #2980B9;
+                }
+                .conteneur {
+                    max-width: 800px;
+                    margin: 50px auto;
+                    text-align: center;
+                    padding: 20px;
+                    background: #fff;
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                    border-radius: 8px;
+                }
+                .conteneur img {
+                    margin: 20px 0;
+                    border-radius: 8px;
+                    width: 100%;
+                }
+                nav {
+                    background-color: #3498DB;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                }
+                nav ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 10px 0;
+                    display: flex;
+                    justify-content: center;
+                }
+                nav li {
+                    position: relative;
+                    margin: 0 15px;
+                }
+                nav a {
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    transition: background 0.3s, transform 0.3s;
+                    display: block;
+                    border-radius: 30px;
+                }
+                nav a:hover {
+                    background: #2980B9;
+                    transform: scale(1.1);
+                }
+                .submenu {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: #3498DB;
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+                    border-radius: 5px;
+                    z-index: 1000;
+                }
+                .dropdown:hover .submenu {
+                    display: block;
+                }
+                .submenu a {
+                    padding: 10px 20px;
+                    display: block;
+                    color: #fff;
+                }
+                .container {
+                    flex: 1;
+                    max-width: 800px;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                    background-color: #fff;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    border-radius: 10px;
+                }
+                form { 
+                    max-width: 400px; margin: auto;
+                 }
+        label, input, textarea {
+             display: block; width: 100%; margin-bottom: 10px;
+             }
+        .footer {
+            background-color: #2C3E50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 14px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color: #ffc107;
+        }
+        div a {
+            color:red
+        }
+            </style>
+        </head>
+        <body>
+            <nav>
+                <ul>
+                    <li class="dropdown"><a href="#">Le Club</a>
+                        <ul class="submenu">
+                            <li><a href="page organisation.html">Organisation</a></li>
+                            <li><a href="page sponsor.html">Sponsors</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#">Info Pratique</a>
+                        <ul class="submenu">
+                            <li><a href="page adhesion.html">Adhésion</a></li>
+                            <li><a href="page classement.html">Classement</a></li>
+                            <li><a href="#">Calendrier des Compétitions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="page contact.html">Contact</a></li>
+                    <li><a href="htmldamien.html">accueil</a></li>
+                </ul>
+            </nav>
+    <h1>Contactez-nous</h1>
+    <form action="mailto:esjusseytt@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="Téléphone">téléphone:</label>
+        <input type="text" id="tel" name="téléphone" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="message">Message:</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+    <div class="footer">Foyer rural Route de Gevigney, 70500 Jussey<br>
+        Téléphone : <a href="tel:0684210210">+33 (0)6 89 21 02 10</a><br>
+        <adresse>Email : <a href="mailto:esjusseytt@gmail.com">esjusseytt@gmail.com</a></adresse><br><br>
+        © 2025 Etoile Sportive de Jussey</div>
+</body>
+</html>

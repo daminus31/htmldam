@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Etoile Sportive Jussey</title>
+    <meta charset="utf-8">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(to right, #E0EAFC, #CFDEF3);
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+            color: #2C3E50;
+            font-weight: 300;
+            margin: 40px 0;
+            text-transform: uppercase;
+        }
+        nav {
+            background-color: #3498DB;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            position: relative;
+            margin: 0 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background 0.3s, transform 0.3s;
+            display: block;
+            border-radius: 30px;
+        }
+        nav a:hover {
+            background: #2980B9;
+            transform: scale(1.1);
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #3498DB;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+            border-radius: 5px;
+            z-index: 1000;
+        }
+        .dropdown:hover .submenu {
+            display: block;
+        }
+        .submenu a {
+            padding: 10px 20px;
+            display: block;
+            color: #fff;
+        }
+        .container {
+            flex: 1;
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .container img {
+    width: 100%; 
+    max-width: 500px; /* Limite maximale de la largeur */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    image-rendering: auto; /* Pour un rendu plus doux des images */
+    margin-top: 20px;
+    transition: transform 0.3s;
+        }
+        .container img:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #2C3E50;
+            color: #EEE;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color: #ffc107;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="dropdown"><a href="#">Le Club</a>
+                <ul class="submenu">
+                    <li><a href="page organisation.html">Organisation</a></li>
+                    <li><a href="page sponsor.html">Sponsors</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">Info Pratique</a>
+                <ul class="submenu">
+                    <li><a href="page adhesion.html">Adhésion</a></li>
+                    <li><a href="page classement.html">Classement</a></li>
+                    <li><a href="#">Calendrier des Compétitions</a></li>
+                </ul>
+            </li>
+            <li><a href="page contact.html">Contact</a></li>
+            <li><a href="htmldamien.html">accueil</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <img src="jussey club.jpg" alt="Jussey Club">
+        <h1>Adhésion</h1>
+        <p>Nos tarifs s'entendent d'août 2024 à juillet 2025. Ils comprennent :</p>
+        <ul>
+            <li>La licence</li>
+            <li>L'assurance</li>
+            <li>La participation au championnat et au critérium fédéral (facultatif)</li>
+            <li>La participation aux manifestations internes (facultatif)</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        © 2025 Etoile Sportive Jussey | <a href="mention legales.html">Mentions légales</a>
+    </div>
+</body>
+</html>
